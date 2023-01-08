@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Generador de Horarios UDP</title>
+    <link href="/public/tablaDisenio.css" rel="stylesheet" type="text/css">
+    <link href="/public/comboboxDisenio.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/public/udp.ico" />
+    
+</head>
+
+<body onload ='loadDoc();' >
+
+    <div id="contenedorTabla">
+            <div class="ComboBox">
+                <select id = "carrera" name="carrera"  onchange="ShowSelected();">
+            
+                </select>   
+            </div>         
+            
+            <div id = "ComboBox" class="ComboBox">
+
+            </div> 
+    </div>
+
+
+    <button  onclick="generarTabla();" >Generar horarios</button>
+
+    <script type="text/javascript" src="/public/generador.js"></script>
+
+</body>
+
+</html>
