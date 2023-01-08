@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simulador UDP</title>
+    <link href="/public/tablaDisenio.css" rel="stylesheet" type="text/css">
+    <link href="/public/comboboxDisenio.css" rel="stylesheet" type="text/css">
+
+    <link rel="icon" href="/public/udp.ico" />
+    
+</head>
+
+<body onload ='generarTabla();'  >
+
+    <!-- Navigation -->
+
+    <header>
+       <img src="/public/UDP_logo2.png" height="70" onclick="location.reload();"> 
+            <h1></h1>
+          <!--   <a  href="/generador.html" class="button1">Generar horarios automatico</a> -->
+
+    </header>
+
+    <!-- Page Content -->
+
+
+   <div class="container">
+
+    <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+
+
+<!-- First Blog carrera -->
+                <!-- carrera[0] es el id -->
+                <!-- carrera[1] es el fecha de la oferta -->
+
+                <!-- carrera[2] es el nombre de la carrera -->
+<br>
+<div class="ComboBox">
+    <select id = "carrera" name="carrera"  onchange="ShowSelected();">
+
+    </select>   
+</div>          
+
+            <hr>
+<!-- Tabla para los ramos de esa carrera-->
+
+    <div>
+
+            <!-- ramos div-->
+                <div id = "ComboBox" class="ComboBox">
+
+                </div> 
+
+
+
+                            <!-- Ahora se procede a hacer la tabla -->
+
+
+            <div id="contenedorTabla" >
+                
+                
+
+            </div>
+    </div>          
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>Copyright &copy; Simulador de Horarios 2023</p>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+</footer>
+
+</div>
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="/public/tabla.js"></script>
+
+</body>
+
+</html>
